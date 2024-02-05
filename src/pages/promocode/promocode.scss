@@ -1,0 +1,37 @@
+.promo-container {
+  .add-car {
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    margin: 10px 0 0 20px;
+  }
+  display: grid;
+  grid-template-rows: min-content min-content auto auto;
+
+  background-color: white;
+  .topRow {
+    display: grid;
+
+    grid-template-columns: max-content min-content;
+    column-gap: 30px;
+    padding: 10px;
+    .filters {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+      gap: 13px;
+      align-items: flex-end;
+      .dateSec {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .dwidgets {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+      gap: 20px;
+    }
+  }
+}

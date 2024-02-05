@@ -1,0 +1,36 @@
+.station-container {
+  display: grid;
+  grid-template-rows: min-content min-content auto auto;
+
+  background-color: white;
+  .topRow {
+    display: grid;
+
+    grid-template-columns: max-content min-content auto;
+    column-gap: 30px;
+    padding: 10px;
+    .filters {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+      gap: 13px;
+      align-items: center;
+      .dateSec {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .addLocation {
+        margin-left: 100px;
+        align-self: self-end;
+      }
+    }
+
+    .dwidgets {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+      gap: 20px;
+    }
+  }
+}

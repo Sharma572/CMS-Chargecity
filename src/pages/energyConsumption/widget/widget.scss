@@ -1,0 +1,34 @@
+.idget {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  height: 100px;
+  background-color: white;
+  align-items: center;
+  .title {
+    font-weight: bold;
+  }
+  .content {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(61, 57, 57);
+  }
+  .item {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 0;
+    padding-top: 0;
+    color: gray;
+  }
+}
+@media screen and (max-width: 575px) {
+  .widget {
+    margin-bottom: 20px;
+  }
+}

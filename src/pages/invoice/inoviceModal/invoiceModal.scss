@@ -1,0 +1,89 @@
+.invoice-box {
+  padding: 1vh 2vh;
+  .top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .icon-bar {
+      display: flex;
+      flex-direction: row;
+      .logo {
+        height: 140px;
+        width: 140px;
+      }
+      .address {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        font-weight: bold;
+        gap: 1.5px;
+        small {
+          color: #696969;
+          font-size: medium;
+          font-weight: normal;
+        }
+        .head {
+          color: #101010;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .top-header {
+      font-weight: bold;
+      font-size: 22px;
+      align-self: center;
+      margin-right: 20px;
+    }
+  }
+  .mid-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .list-item {
+      margin: 20px 8px;
+      display: flex;
+      column-gap: 1vh;
+
+      .left-item {
+        font-weight: bold;
+      }
+      .right-item {
+        margin-left: 2;
+      }
+    }
+  }
+  .bottom-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    .mid-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .list-item {
+        margin: 20px 8px;
+        display: flex;
+        column-gap: 1vh;
+
+        .left-item {
+          font-weight: bold;
+        }
+        .right-item {
+          margin-left: 2;
+        }
+      }
+    }
+  }
+}
+
+.headItem {
+  display: flex;
+  .head1 {
+    align-self: flex-start;
+  }
+  .head2 {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}

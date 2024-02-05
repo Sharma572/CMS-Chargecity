@@ -1,0 +1,40 @@
+.vendor-container {
+  display: grid;
+  grid-template-rows: min-content min-content;
+
+  background-color: white;
+  .add-location {
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    margin: 10px 0 0 20px;
+  }
+  .table {
+    height: auto;
+  }
+  .topRow {
+    display: grid;
+
+    grid-template-columns: max-content min-content;
+    column-gap: 30px;
+    padding: 10px;
+    .filters {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+      gap: 13px;
+      align-items: flex-end;
+      .dateSec {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .dwidgets {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+      gap: 20px;
+    }
+  }
+}

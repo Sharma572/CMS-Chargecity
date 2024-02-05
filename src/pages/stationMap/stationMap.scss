@@ -1,0 +1,232 @@
+.map-container {
+  display: grid;
+  grid-template-columns: max-content 2fr;
+
+  background-color: white;
+  .map-info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 1;
+    width: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    .closeIcon {
+      align-self: flex-end;
+      margin: 1.5vh;
+      cursor: pointer;
+      &:hover {
+        color: #ff2306;
+      }
+    }
+
+    .locTitle {
+      font-weight: bold;
+      font-size: 3vh;
+      align-self: flex-start;
+      margin: 2vh;
+      font-family: "Poppins";
+    }
+    .addressRow {
+      margin: 0 0 1vh 2vh;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1vh;
+
+      .addressHead {
+        color: gray;
+        font-size: 2vh;
+        font-weight: bold;
+      }
+      .addressInfo {
+        font-weight: bold;
+        font-size: 2vh;
+        font-family: "Poppins";
+      }
+    }
+    .chargerRow {
+      margin: 2vh 1vh 1vh 2vh;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1vh;
+
+      .chargerHead {
+        font-weight: bold;
+        color: green;
+        font-size: 2vh;
+      }
+      .chargerInfo {
+        display: flex;
+        flex-direction: column;
+        column-gap: 2vh;
+        font-family: "Poppins";
+        gap: 3vh;
+        .chargerList {
+          display: flex;
+          flex-direction: column;
+          gap: 1vh;
+          font-family: "Poppins";
+          .chargerType {
+            display: flex;
+            flex-direction: row;
+            gap: 1vh;
+            font-family: "Poppins";
+          }
+
+          .chargerCapacity {
+            display: flex;
+            flex-direction: row;
+            gap: 1vh;
+            font-family: "Poppins";
+            .icon {
+              width: 6vh;
+              aspect-ratio: 1/1;
+            }
+            .barData {
+              align-self: center;
+            }
+          }
+          .label {
+            display: flex;
+            justify-content: center;
+            border-radius: 39px;
+            width: 80px;
+            background: green;
+            border: 3px solid green;
+            .labelText {
+              color: white;
+            }
+          }
+          .chargerTypeData {
+            font-size: 1.5vh;
+            color: blue;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+  .map-info-close {
+    display: none;
+  }
+
+  .mapContainer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 1;
+  }
+
+  @media screen and (max-width: 575px) {
+    .map-info {
+      grid-row-start: 1;
+
+      grid-row-end: 2;
+      width: 50vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+
+      .closeIcon {
+        align-self: flex-end;
+        margin: 1.5vh;
+        cursor: pointer;
+        &:hover {
+          color: #ff2306;
+        }
+      }
+
+      .locTitle {
+        font-weight: bold;
+        font-size: 3vh;
+        align-self: flex-start;
+        margin: 2vh;
+        font-family: "Poppins";
+      }
+      .addressRow {
+        margin: 0 0 1vh 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+
+        .addressHead {
+          color: gray;
+          font-size: 2vh;
+          font-weight: bold;
+        }
+        .addressInfo {
+          font-weight: bold;
+          font-size: 2vh;
+          font-family: "Poppins";
+        }
+      }
+      .chargerRow {
+        margin: 2vh 1vh 1vh 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+
+        .chargerHead {
+          font-weight: bold;
+          color: green;
+          font-size: 2vh;
+        }
+        .chargerInfo {
+          display: flex;
+          flex-direction: column;
+          column-gap: 2vh;
+          font-family: "Poppins";
+          gap: 3vh;
+          .chargerList {
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            font-family: "Poppins";
+            .chargerType {
+              display: flex;
+              flex-direction: row;
+              gap: 1vh;
+              font-family: "Poppins";
+            }
+
+            .chargerCapacity {
+              display: flex;
+              flex-direction: row;
+              gap: 1vh;
+              font-family: "Poppins";
+              .icon {
+                width: 5vh;
+                aspect-ratio: 1/1;
+              }
+              .barData {
+                align-self: center;
+              }
+            }
+            .label {
+              display: flex;
+              justify-content: center;
+              border-radius: 39px;
+              width: 80px;
+              background: green;
+              border: 3px solid green;
+              .labelText {
+                color: white;
+              }
+            }
+            .chargerTypeData {
+              font-size: 1.5vh;
+              color: blue;
+              align-self: center;
+            }
+          }
+        }
+      }
+    }
+
+    .mapContainer {
+      grid-row-start: 2;
+
+      grid-row-end: 3;
+    }
+  }
+}

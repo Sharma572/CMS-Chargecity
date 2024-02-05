@@ -1,0 +1,124 @@
+.recharts-label{
+  color: #111;
+font-family: "lexend";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 110.5%; /* 17.68px */
+}
+.pChart {
+  border-radius: 10px;
+background: #F6F8FA;
+box-shadow: 0px 0px 200px 0px rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  width: 99%;
+  height: 29rem;
+  margin: 10px auto;
+
+  .total_count_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    .icon_total{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+    h2{
+      color: #111;
+  font-family: "lexend";
+  font-size: 16px;
+  font-style: normal;
+  margin-left: 8px;
+  font-weight: 400;
+  line-height: 110.5%; /* 17.68px */
+    }
+    }
+    .total_count{
+      h1{
+        color: #111;
+  font-family: "lexend";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 110.5%; /* 17.68px */
+      }
+    }
+  }
+
+  
+
+
+  .chartTypeStyle{
+    margin-top: 2px;
+  }
+
+  .title {
+    color: #111;
+font-family: "lexend";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 110.5%; /* 19.89px */
+  }
+  .newContent {
+    width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .stats_container_style{
+    margin-top: 1px;
+    @media (min-width: 768px) {
+      // margin-top: 12px;
+    }
+  }
+  .chartInfo {
+    li {
+      list-style: none;
+      padding: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      width: 100%;
+      color: #000000;
+
+      font-family: "Poppins";
+      font-style: normal;
+
+      line-height: 16px;
+      /* or 114% */
+
+      letter-spacing: 0.4px;
+      text-transform: capitalize;
+      span {
+        width: 25px;
+        height: 15px;
+        margin-top: 4px ;
+        border-radius: 60%;
+      }
+      .ind_container{
+        display: flex;
+       
+        .icon_container{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      .value_stats{
+        color: #111;
+font-family: "lexend";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 110.5%; /* 17.68px */
+      }
+    }
+    .c_type{
+      margin-top: 6px;
+    }
+  }
+}

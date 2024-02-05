@@ -1,0 +1,108 @@
+.databaseTable {
+  padding: 20px;
+  .title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .tHead {
+    background-color: #1ac47d;
+    color: aliceblue;
+    .tCell {
+      color: aliceblue;
+    }
+  }
+  .innerTableHead {
+    background-color: rgb(207, 203, 203);
+    .innerTable {
+      font-weight: bold;
+    }
+  }
+
+  .label-charging {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    width: 80px;
+    height: 24px;
+    background: white;
+    border: 3px solid #58a55c;
+    align-items: flex-end;
+    .labelText {
+      color: #58a55c;
+      padding: 3px;
+    }
+  }
+  .label-faulted {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    width: 80px;
+    height: 24px;
+    background: white;
+    border: 3px solid #f90000;
+    align-items: flex-end;
+    .labelText {
+      color: #f70000;
+      padding: 3px;
+    }
+  }
+  .label-available {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 28px;
+    padding: 2px 8px;
+
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    border: 3px solid #5185ec;
+    align-items: flex-end;
+    .labelText {
+      color: #5185ec;
+      padding: 3px;
+    }
+  }
+  .label-offline {
+    display: flex;
+    justify-content: center;
+    border-radius: 28px;
+    padding: 2px 8px;
+
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    border: 3px solid #f1be42;
+    align-items: flex-end;
+    .labelText {
+      color: #f1be42;
+      padding: 3px;
+    }
+  }
+  .label-connected {
+    display: flex;
+    justify-content: center;
+    border-radius: 28px;
+    padding: 2px 8px;
+
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    border: 3px solid grey;
+    align-items: flex-end;
+    .labelText {
+      color: grey;
+      padding: 3px;
+    }
+  }
+  .toggleButton {
+    color: #1ac47d;
+    text-decoration: underline;
+  }
+
+  .innertableTitle {
+    font-weight: bold;
+    color: #1ac47d;
+  }
+}

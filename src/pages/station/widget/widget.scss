@@ -1,0 +1,65 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  height: 100px;
+  background-color: white;
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      color: rgb(61, 57, 57);
+    }
+    .counter {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(61, 57, 57);
+
+      &.start {
+        align-self: flex-start;
+      }
+      &.end {
+        align-self: flex-end;
+      }
+    }
+    .item {
+      font-size: 12px;
+      font-weight: lighter;
+      margin-top: 0;
+      padding-top: 0;
+      color: gray;
+    }
+    .link {
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+    }
+    .percentage {
+      display: flex;
+      align-self: flex-end;
+      font-size: 14px;
+      &.positive {
+        color: green;
+      }
+      &.negative {
+        color: red;
+      }
+    }
+    .icon {
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .widget {
+    margin-bottom: 20px;
+  }
+}

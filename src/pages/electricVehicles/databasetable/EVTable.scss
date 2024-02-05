@@ -1,0 +1,84 @@
+.ev-table {
+  padding: 20px;
+  .title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .label {
+    display: flex;
+    justify-content: center;
+    border-radius: 39px;
+    width: 80px;
+    background: white;
+    border: 3px solid green;
+    .labelText {
+      color: green;
+      padding: 3px;
+    }
+  }
+
+  .labelCompleted {
+    display: flex;
+    justify-content: center;
+    border-radius: 39px;
+    width: 80px;
+    background: white;
+    border: 3px solid rgb(183, 132, 39);
+    .labelText {
+      color: rgb(183, 132, 39);
+      padding: 3px;
+    }
+  }
+  .cellWithTable {
+    display: felx;
+    align-items: center;
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      color: rgba(42, 60, 136, 1);
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+  .cellWithStatus {
+    padding: 5px;
+    width: 10vh;
+    height: 3vh;
+    border-radius: 60%;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.Approved {
+      background-color: black;
+      color: green;
+    }
+    &.Pending {
+      background-color: black;
+      color: goldenrod;
+    }
+  }
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1pc rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+    }
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1pc rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+  }
+}

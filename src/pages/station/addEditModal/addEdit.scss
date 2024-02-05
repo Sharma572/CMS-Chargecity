@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  .customRow {
+    display: flex;
+    flex-direction: row;
+    gap: 8vh;
+  }
+}
+.headItem {
+  display: flex;
+  .head1 {
+    align-self: flex-start;
+  }
+  .head2 {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+.innerTableHead {
+  background-color: rgb(207, 203, 203);
+  .innerTable {
+    font-weight: bold;
+  }
+}
+small {
+  color: red;
+  font-size: large;
+}

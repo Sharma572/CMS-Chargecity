@@ -1,0 +1,47 @@
+.notification-container {
+  background-color: rgb(235, 240, 240);
+  .notifications {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 3fr 4fr;
+    margin: 12px;
+    box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    justify-self: center;
+    border-radius: 12px;
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .top-para {
+        margin: 2vh;
+        padding: 1vh;
+        font-size: 3vh;
+        color: gray;
+      }
+    }
+    .mid {
+      background-color: #1ac47d;
+      padding: 20px;
+      .top-filter {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin: 20px;
+        flex-wrap: wrap;
+      }
+      .bottom-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px;
+        flex-wrap: wrap;
+      }
+    }
+    .bottom {
+      margin: 12px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.csContainer {
+  display: grid;
+  grid-template-rows: min-content min-content auto auto;
+
+  background-color: white;
+  .topRow {
+    display: flex;
+
+    flex-direction: row;
+    row-gap: 40px;
+    padding: 10px;
+    flex-wrap: wrap;
+    .filters {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+      gap: 13px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      .dateSec {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .dwidgets {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 10px 0 10px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 575px) {
+      .dwidgets {
+        display: block;
+        padding: 10px;
+      }
+    }
+  }
+  .report-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    margin-right: 20px;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 575px) {
+    .topRow {
+      display: flex;
+
+      flex-direction: column;
+    }
+  }
+}

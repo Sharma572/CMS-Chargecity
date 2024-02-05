@@ -1,0 +1,68 @@
+.invoice-container {
+  background-color: rgb(235, 240, 240);
+
+  .filters {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 0 10px;
+    gap: 13px;
+    align-items: flex-end;
+  }
+
+  .invoice-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    margin: 12px;
+    box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 12px;
+    .top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .top-para {
+        margin: 2vh;
+        padding: 1vh;
+        font-size: 3vh;
+        color: gray;
+      }
+    }
+    .top-filter {
+      display: flex;
+      gap: 4vh;
+      flex-direction: column;
+      background-color: #1ac47d;
+    }
+
+    .invoice-row {
+      display: flex;
+      flex-direction: row;
+      gap: 4vh;
+      margin: 20px;
+    }
+  }
+  .reportButton {
+    box-shadow: inset 0px 1px 0px 0px #fce2c1;
+    background: linear-gradient(to bottom, #2e94fb 5%, #2e94fb 100%);
+    background-color: green;
+    border-radius: 11px;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px green;
+    margin: 2vh;
+    width: max-content;
+  }
+}

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+$background-color: #ffffff;
+$font-family: "Roboto", sans-serif;
+
+@mixin btn($fontcolor: #fafafa) {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  outline: 0;
+  border: 0;
+  width: 35vh;
+  padding: 15px;
+  background: #1ac47d;
+  color: $fontcolor;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@mixin input($bkgnd: #f5f5f5) {
+  font-family: $font-family;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  outline: 0;
+  font-size: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  background: $bkgnd;
+}
+.container {
+  .login-container {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    .left-side {
+      background-color: #1ac47d;
+    }
+
+    .body {
+      font-family: $font-family;
+      background: $background-color;
+      height: 81vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      /* Center and scale the image nicely */
+      background-image: url("../../icons/Background.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .container {
+        width: 70vh;
+        background-repeat: no-repeat;
+        .form {
+          box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.75);
+          margin-top: 150vh;
+          position: relative;
+          z-index: 1;
+          max-width: 350px;
+          margin: 0 auto 100px;
+          padding: 45px;
+          background: #ffffff;
+          .link-sent {
+            font-size: 18px;
+          }
+          .head {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+          }
+
+          .loginButton {
+            text-decoration: underline;
+            color: #1ac47d;
+            display: flex;
+            justify-content: center;
+            width: -webkit-fill-available;
+          }
+        }
+      }
+    }
+
+    .form {
+      input {
+        @include input;
+
+        ::placeholder {
+          color: #90a4ae;
+        }
+      }
+
+      .btn {
+        @include btn;
+      }
+    }
+
+    .form .register-form {
+      display: none;
+    }
+  }
+  .copyright-sec {
+    background-color: #1ac47d;
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    .mid-sec {
+      padding: 2vh 10vh 0vh;
+      display: flex;
+      justify-content: space-between;
+      color: #f5f5f5;
+      h4 {
+        text-decoration: underline;
+        font-size: 2vh;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        .item {
+          color: #f5f5f5;
+          a {
+            color: #f5f5f5;
+            &:hover {
+              color: #035634;
+            }
+          }
+        }
+      }
+      .mid-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
+    }
+    .bottom-sec {
+      display: flex;
+
+      align-items: flex-end;
+      justify-content: center;
+      align-self: flex-end;
+      background-color: #1ac47d;
+      height: 10vh;
+      width: 100%;
+      .first {
+        padding: 0 2vh;
+        color: #f5f5f5;
+      }
+
+      .mid {
+        padding: 0 2vh;
+        color: #f5f5f5;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login-container {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    height: 100vh;
+    .left-side {
+      background-color: #1ac47d;
+    }
+    .body {
+      font-family: $font-family;
+      background: $background-color;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      /* Center and scale the image nicely */
+      background-image: url("../../icons/Background.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .container {
+        width: 40.5vh;
+        background-repeat: no-repeat;
+        .form {
+          box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.75);
+          margin-top: 150vh;
+          position: relative;
+          z-index: 1;
+          max-width: 350px;
+          margin: 0 auto 100px;
+          padding: 45px;
+          background: #ffffff;
+          .link-sent {
+            font-size: 18px;
+          }
+          .head {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+          }
+
+          .loginButton {
+            text-decoration: underline;
+            color: #1ac47d;
+            display: flex;
+            justify-content: center;
+            width: -webkit-fill-available;
+          }
+        }
+      }
+    }
+
+    .form {
+      input {
+        @include input;
+
+        ::placeholder {
+          color: #90a4ae;
+        }
+      }
+
+      .btn {
+        @include btn;
+      }
+    }
+
+    .form .register-form {
+      display: none;
+    }
+  }
+}
